@@ -1,23 +1,59 @@
 body{
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
+padding: 0;
+margin: 0;
+background-color: rgb(31, 31, 31);
 }
-
+h1{
+  color: #FACD35;
+  text-align: center;
+  font-size: 500%;
+  font-family: 'Playfair Display', serif;
+}
+p{
+  color: rgb(255, 196, 0);
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 200%;
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  color: #FACD35;
+  font-family: 'Playfair Display', serif;
+}
+.wrapper{
+  width:100%;
+  height:100%;
+  min-width: 1000px;
+min-height: 1000px;
+}
 .homeareas{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 12;
+    grid-auto-rows:minmax(100px,auto);
     grid-template-areas: 
-        "nav nav nav imglogo"
-        "imgbee imgbee imgbee imgbee"
-        "imgbee imgbee imgbee imgbee"
-        "bradley bradley title title";  
-    width: 100%;
-    height: 100vh;
-    margin: auto;  
+        "nav nav . . . . . . imglogo . . ."
+        ". . . . . . . . . . . ."
+        "imgbee imgbee imgbee imgbee imgbee  imgbee  imgbee  imgbee imgbee imgbee imgbee imgbee"
+        ". . . . . . . . . . . ."
+        "aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus" 
+        ". . . . . . . . . . . ."
+        "imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees"
+        ". . . . . . . . . . . ."
+        "products products products products products products products products products products products products"
+        ". . . . . bush manuka rewarewa . . . ."
+        "gallary gallary gallary gallary gallary gallary gallary gallary gallary gallary gallary gallary"
+        " gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs "
+        ;
+
+        
+      
 
 }
   .nav{
     grid-area: nav; 
+    height: 100px;
    
   }
   .nav ul li{
@@ -39,13 +75,53 @@ body{
   }
   .imglogo{
       grid-area: imglogo;
-      
-      /* height: 100%; */
-      width: 100%;
+      width: 300%;
+      float: left;
+      padding-top: 10%;
   }
 
  .imgbee{
     grid-area: imgbee; 
-     width: 1000pt;
-     height: 100pt;
+    width:100%;
+ }
+ .aboutus{
+   grid-area: aboutus;
+   font-family: 'Open Sans', sans-serif;
+ }
+ .imgbees{
+   grid-area: imgbees;
+   width: 100%;
+ }
+ .products{
+   grid-area: products;
+ }
+ .prodblurb{
+grid-area: prodblurb;
+padding-top: 10%;
+font-family: 'Open Sans', sans-serif;
+ }
+ .bush{
+  grid-area: bush;
+  width: 30%;
+  font-family: 'Open Sans', sans-serif;
+  
+ }
+ .manuka{
+  grid-area: manuka;
+  width: 30%;
+  font-family: 'Open Sans', sans-serif;
+  
+ }
+ .rewarewa{
+  grid-area: rewarewa;
+  width: 30%;
+  font-family: 'Open Sans', sans-serif;
+  
+ }
+ .gallary{
+   grid-area: gallary;
+
+ }
+ .gallaryimgs{
+   grid-area: gallaryimgs;
  }
