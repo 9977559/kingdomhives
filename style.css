@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+.container{
+   background-color: black; 
+    display: grid, inline-grid;
+}
+
+.header{
+    font-size: 50pt;
+    text-align: center;
+    color: #FACD35;
+}
