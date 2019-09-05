@@ -41,15 +41,9 @@ min-height: 1000px;
         ". . . . . . . . . . . ."
         "imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees"
         ". . . . . . . . . . . ."
-        "products products products products products products products products products products products products"
-        ". . . . . bush manuka rewarewa . . . ."
-        "gallary gallary gallary gallary gallary gallary gallary gallary gallary gallary gallary gallary"
-        " gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs gallaryimgs "
-        ;
-
-        
-      
-
+        "products products products products products products products products products products products products";
+        justify-content: right;
+        align-content: right;
 }
   .nav{
     grid-area: nav; 
@@ -60,13 +54,11 @@ min-height: 1000px;
    
     list-style: none;
       position: inherit;
-      left: 21px;
-      top: 14px;
       font-family: Playfair Display;
       font-style: normal;
       font-weight: normal;
-      font-size: 36px;
-      line-height: 42px;
+      font-size: 150%;
+      line-height: 150%;
       letter-spacing: 0.115em;
       color: #FACD35;
   }
@@ -76,8 +68,8 @@ min-height: 1000px;
   .imglogo{
       grid-area: imglogo;
       width: 300%;
-      float: left;
       padding-top: 10%;
+     
   }
 
  .imgbee{
@@ -102,26 +94,89 @@ font-family: 'Open Sans', sans-serif;
  }
  .bush{
   grid-area: bush;
-  width: 30%;
-  font-family: 'Open Sans', sans-serif;
+  width: 33%;
+  display: box;
+  ;
   
  }
  .manuka{
   grid-area: manuka;
-  width: 30%;
-  font-family: 'Open Sans', sans-serif;
+  width: 33%;
+  display: box;
   
  }
  .rewarewa{
   grid-area: rewarewa;
-  width: 30%;
-  font-family: 'Open Sans', sans-serif;
+  width: 33%;
+  display: box;
   
  }
- .gallary{
-   grid-area: gallary;
-
- }
- .gallaryimgs{
-   grid-area: gallaryimgs;
- }
+ .gallerycontainer{
+  display: grid;
+  grid-template-columns: 3;
+  grid-auto-rows:minmax(100px,auto);
+  grid-template-areas: 
+      "fb ig yt"
+      ". . ."
+      "btt btt btt"
+      ;
+    
+}
+.ig1{
+  grid-area: ig1;
+  width: 33%;
+}
+.ig2{
+  grid-area: ig2;
+  width: 33%;
+}
+.ig3{
+  grid-area: ig3;
+  width: 33%;
+}
+.ig4{
+  grid-area: ig4;
+  width: 33%;
+}
+.ig5{
+  grid-area: ig5;
+  width: 33%;
+}
+.ig6{
+  grid-area: ig6;
+  width: 33%;
+}
+.ig7{
+  grid-area: ig7;
+  width: 33%;
+}
+.ig8{
+  grid-area: ig8;
+  width: 33%;
+}
+.ig9{
+  grid-area: ig9;
+  width: 33%;
+}
+.footer{
+  grid-area: ft;
+}
+.fb{
+grid-area: fb;
+width: 40%;
+margin-left: 30%;
+}
+.yt{
+grid-area: yt;
+width: 40%;
+margin-left: 30%;
+}
+.ig{
+grid-area: ig;
+width: 40%;
+margin-left: 30%;
+}
+.btt{
+  grid-area: btt;
+  margin-left: 45%;
+}
