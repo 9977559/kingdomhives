@@ -6,7 +6,7 @@ body{
 padding: 0;
 margin: 0;
 background-color: rgb(31, 31, 31);
-width: 100vw;
+
 }
 h1{
   color: #FACD35;
@@ -38,7 +38,7 @@ min-height: 1000px;
     grid-auto-rows:minmax(100px,auto);
     grid-template-areas:
         "imgbee imgbee imgbee imgbee imgbee  imgbee  imgbee  imgbee imgbee imgbee imgbee imgbee"
-        ". . . . . . . . . . . ."
+        "header header header header header header header header header header header header "
         "aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus" 
         ". . . . . . . . . . . ."
         "imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees"
@@ -55,8 +55,8 @@ html {font-size: 62.5%; font-family: 'Open Sans', sans-serif;}
 body {font-size: 1.6rem; min-height: 100vh;}
 h1 {font-size: 3rem; margin-bottom: 1rem;}
 h2 {font-size: 1.6rem;}
-header {position: relative;}
-main {padding: 2rem;}
+header {position: sticky;grid-area: header;}
+main {padding: 2rem; position: sticky;}
 
 /************** NAVIGATION ***************/
 
@@ -86,7 +86,7 @@ nav a {
 	font-size: 1.8rem;
 }
 nav a:hover {
-	background: #adacac;
+	background: #474747;
 	color:  #FACD35;
 }
 nav li {
@@ -95,7 +95,7 @@ nav li {
 	color:  #FACD35;
 	text-align: center;
 }  
-nav input,
+/* nav input,
 nav label {
 	display: none;
 	width: 36px; 
@@ -108,7 +108,7 @@ nav label {
 	border-radius: 2px;
 } 
 nav label {
-   position: absolute; 
+   position: sticky; 
    top: 8px; 
    right: 8px; 
    transition: .4s;
@@ -119,11 +119,11 @@ nav label:before {
 	font-size: 24px;
 	content: "\f0c9";
 	text-align: center;
-}
+} */
 
 /************* MEDIA QUERIES **************/
 
-@media only screen and (max-width: 1080px){
+/* @media only screen and (max-width: 1080px){
    nav {
       position: sticky;
    }
@@ -152,7 +152,7 @@ nav label:before {
 		background: #777; 
 		color: #fff;
 	}  
-}
+} */
   
 
   .imglogo{
