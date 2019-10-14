@@ -1,272 +1,272 @@
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
-    /* background-color: rgb(0, 0, 0); */
-padding: 0;
-margin: 0;
-background-color: rgb(31, 31, 31);
-
+body {
+  /* background-color: rgb(0, 0, 0); */
+  padding: 0;
+  margin: 0;
+  background-color: rgb(31, 31, 31);
 }
-h1{
-  color: #FACD35;
+h1 {
+  color: #facd35;
   text-align: center;
   font-size: 500%;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
-p{
+p {
   color: rgb(255, 196, 0);
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
   font-size: 200%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-a{
-  color: #FACD35;
-  font-family: 'Playfair Display', serif;
+a {
+  color: #facd35;
+  font-family: "Playfair Display", serif;
 }
-.wrapper{
-  width:100%;
-  height:100%;
-  min-width: 1000px;
-min-height: 1000px;
+.wrapper {
+  width: 100%;
+  height: 100%;
+  /* min-width: 1000px; */
+  min-height: 1000px;
 }
-.homeareas{
-    display: grid;
-    grid-template-columns: 12;
-    grid-auto-rows:minmax(100px,auto);
-    grid-template-areas:
-        "imgbee imgbee imgbee imgbee imgbee  imgbee  imgbee  imgbee imgbee imgbee imgbee imgbee"
-        "header header header header header header header header header header header header "
-        "aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus" 
-        ". . . . . . . . . . . ."
-        "imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees"
-        ". . . . . . . . . . . ."
-        "products products products products products products products products products products products products";
-        justify-content: right;
-        align-content: right;
+.homeareas {
+  display: grid;
+  grid-template-columns: 12;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "imgbee imgbee imgbee imgbee imgbee  imgbee  imgbee  imgbee imgbee imgbee imgbee imgbee"
+    "header header header header header header header header header header header header "
+    "aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus aboutus"
+    ". . . . . . . . . . . ."
+    "imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees imgbees"
+    ". . . . . . . . . . . ."
+    "products products products products products products products products products products products products";
+  justify-content: right;
+  align-content: right;
 }
 /***************** FONTS ********************/
 
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
-html {font-size: 62.5%; font-family: 'Open Sans', sans-serif;}
-body {font-size: 1.6rem; min-height: 100vh;}
-h1 {font-size: 3rem; margin-bottom: 1rem;}
-h2 {font-size: 1.6rem;}
-header {position: sticky;grid-area: header;}
-main {padding: 2rem; position: sticky;}
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+header {
+  position: sticky;
+  grid-area: header;
+}
+main {
+  padding: 2rem;
+  position: sticky;
+}
 
 /************** NAVIGATION ***************/
 
 nav {
   position: sticky;
- 
 }
 nav ul {
-	display: flex; 
-	flex-wrap: wrap; 
-	max-width: 1080px; 
-	margin: 0 auto;		
-   background: rgb(31, 31, 31);
-   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1080px;
+  margin: 0 auto;
+  background: rgb(31, 31, 31);
+  list-style: none;
 }
 nav ul,
 nav li {
-	flex: 1;	
+  flex: 1;
 }
 nav li:last-child {
-   border-bottom: none;
+  border-bottom: none;
 }
 nav a {
-	text-decoration: none;
-	color: inherit;
-	display: block;
-	font-size: 1.8rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  font-size: 1.8rem;
 }
 nav a:hover {
-	background: #474747;
-	color:  #FACD35;
+  background: #474747;
+  color: #facd35;
 }
 nav li {
- 
-	line-height: 50px;
-	color:  #FACD35;
-	text-align: center;
-}  
-/* nav input,
-nav label {
-	display: none;
-	width: 36px; 
-	height: 36px; 
-	background: #555; 
-	color:  #FACD35; 
-	text-align: center; 
-	line-height: 36px;
-	font-size: 1.6rem;
-	border-radius: 2px;
-} 
-nav label {
-   position: sticky; 
-   top: 8px; 
-   right: 8px; 
-   transition: .4s;
+  line-height: 50px;
+  color: #facd35;
+  text-align: center;
 }
-nav label:hover {cursor:pointer;}
-nav label:before {
-	font-family: FontAwesome;
-	font-size: 24px;
-	content: "\f0c9";
-	text-align: center;
-} */
+.imglogo {
+  grid-area: imglogo;
+  width: 300%;
+  padding-top: 10%;
+}
 
-/************* MEDIA QUERIES **************/
-
-/* @media only screen and (max-width: 1080px){
-   nav {
-      position: sticky;
-   }
-	nav ul {
-		transform: translateY(0);
-		box-shadow: 0 0 5px rgba(0,0,0, .7);
-      transition: all .5s;
-      position: absolute;
-      width: 100%;
-	}
-	nav li {
-		flex: none; 
-		width: 100%;
-		border-bottom: solid 1px  #FACD35;
-	} 
-	nav input[type="checkbox"]:checked + ul  {
-		transform: translateY(-100%);
-		width: 100%;
-		background:  #FACD35;   
-      transition: all .5s;
-	}
-	nav label{
-      display: block;
-   }  
-	nav input[type="checkbox"]:checked + ul li:nth-child(1){
-		background: #777; 
-		color: #fff;
-	}  
-} */
-  
-
-  .imglogo{
-      grid-area: imglogo;
-      width: 300%;
-      padding-top: 10%;
-     
-  }
-
- .imgbee{
-    grid-area: imgbee; 
-    width:100%;
- }
- .aboutus{
-   grid-area: aboutus;
-   font-family: 'Open Sans', sans-serif;
- }
- .imgbees{
-   grid-area: imgbees;
-   width: 100%;
- }
- .products{
-   grid-area: products;
- }
- .prodblurb{
-grid-area: prodblurb;
-padding-top: 10%;
-font-family: 'Open Sans', sans-serif;
- }
- .bush{
+.imgbee {
+  grid-area: imgbee;
+  width: 100%;
+}
+.aboutus {
+  grid-area: aboutus;
+  font-family: "Open Sans", sans-serif;
+}
+.imgbees {
+  grid-area: imgbees;
+  width: 100%;
+}
+.products {
+  grid-area: products;
+}
+.prodblurb {
+  grid-area: prodblurb;
+  padding-top: 10%;
+  font-family: "Open Sans", sans-serif;
+}
+.bush {
   grid-area: bush;
   width: 33%;
   display: box;
-  ;
-  
- }
- .manuka{
+}
+.manuka {
   grid-area: manuka;
   width: 33%;
   display: box;
-  
- }
- .rewarewa{
+}
+.rewarewa {
   grid-area: rewarewa;
   width: 33%;
   display: box;
-  
- }
- .gallerycontainer{
+}
+.gallerycontainer {
   display: grid;
   grid-template-columns: 3;
-  grid-auto-rows:minmax(100px,auto);
-  grid-template-areas: 
-      "fb ig yt"
-      ". . ."
-      "btt btt btt"
-      ;
-    
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "fb ig yt"
+    ". . ."
+    "btt btt btt";
 }
-.ig1{
+.ig1 {
   grid-area: ig1;
   width: 33%;
 }
-.ig2{
+.ig2 {
   grid-area: ig2;
   width: 33%;
 }
-.ig3{
+.ig3 {
   grid-area: ig3;
   width: 33%;
 }
-.ig4{
+.ig4 {
   grid-area: ig4;
   width: 33%;
 }
-.ig5{
+.ig5 {
   grid-area: ig5;
   width: 33%;
 }
-.ig6{
+.ig6 {
   grid-area: ig6;
   width: 33%;
 }
-.ig7{
+.ig7 {
   grid-area: ig7;
   width: 33%;
 }
-.ig8{
+.ig8 {
   grid-area: ig8;
   width: 33%;
 }
-.ig9{
+.ig9 {
   grid-area: ig9;
   width: 33%;
 }
-.footer{
+.footer {
   grid-area: ft;
 }
-.fb{
-grid-area: fb;
-width: 40%;
-margin-left: 30%;
+.fb {
+  grid-area: fb;
+  width: 40%;
+  margin-left: 30%;
 }
-.yt{
-grid-area: yt;
-width: 40%;
-margin-left: 30%;
+.yt {
+  grid-area: yt;
+  width: 40%;
+  margin-left: 30%;
 }
-.ig{
-grid-area: ig;
-width: 40%;
-margin-left: 30%;
+.ig {
+  grid-area: ig;
+  width: 40%;
+  margin-left: 30%;
 }
-.btt{
+.btt {
   grid-area: btt;
   margin-left: 45%;
+}
+@media (max-width: 830px) {
+  .bush {
+    grid-area: bush;
+    width: 100%;
+    display: box;
+  }
+  .manuka {
+    grid-area: manuka;
+    width: 100%;
+    display: box;
+  }
+  .rewarewa {
+    grid-area: rewarewa;
+    width: 100%;
+    display: box;
+  }
+  .ig1 {
+    grid-area: ig1;
+    width: 100%;
+  }
+  .ig2 {
+    grid-area: ig2;
+    width: 100%;
+  }
+  .ig3 {
+    grid-area: ig3;
+    width: 100%;
+  }
+  .ig4 {
+    grid-area: ig4;
+    width: 100%;
+  }
+  .ig5 {
+    grid-area: ig5;
+    width: 100%;
+  }
+  .ig6 {
+    grid-area: ig6;
+    width: 100%;
+  }
+  .ig7 {
+    grid-area: ig7;
+    width: 100%;
+  }
+  .ig8 {
+    grid-area: ig8;
+    width: 100%;
+  }
+  .ig9 {
+    grid-area: ig9;
+    width: 100%;
+  }
 }
