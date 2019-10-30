@@ -12,7 +12,7 @@
 
 <body>
 
-    <a name="home"></a>
+    <a id="home"></a>
     <div class="wrapper">
 
         <div class="homeareas">
@@ -32,7 +32,7 @@
             </header>
 
             <div class="aboutus">
-                <a name="about"></a>
+                <a id="about"></a>
                 <h1>About Us</h1>
 
                 <p>Kingdom Hives was created early 2016 by a close friend Steven Maclean and myself (Blake Amann) after
@@ -64,12 +64,12 @@
             </div>
             <img src="images/circlebees.jpg" class="imgbees" alt="img of bees in circle">
             <div class="products">
-                <a name="products"></a>
+                <a id="products"></a>
                 <h1>Our Products</h1>
                 <p>If you want to get your hands on some of our produce, head along to Seren-Aid at 515 SH2, Te Puna.
                 </p>
             </div>
-
+</div>
 
 
 
@@ -82,34 +82,36 @@
             <img src="images/kh-rewarewa.png" class="rewarewa" alt="Rewarewa honey">
 
             <div class="gallery">
-                <a name="gallery"></a>
+                <a id="gallery"></a>
                 <h1>Gallery</h1>
             </div>
 
             <img src="images/ig1PNG.PNG" class="ig1" alt="Bee hive">
-            <img src="images/ig2.PNG" class="ig2"alt="bees on hive">
-            <img src="images/ig3.PNG" class="ig3"alt="bee smoker">
-            <img src="images/ig4.PNG" class="ig4"alt="honey pot">
-            <img src="images/ig5.PNG" class="ig5"alt="swarm">
-            <img src="images/ig6.PNG" class="ig6"alt="queen plugs">
-            <img src="images/ig7.PNG" class="ig7"alt="bee on flower">
-            <img src="images/ig8.PNG" class="ig8"alt="comb on frame">
-            <img src="images/ig9.PNG" class="ig9"alt="hives">
+            <img src="images/ig2.PNG" class="ig2" alt="bees on hive">
+            <img src="images/ig3.PNG" class="ig3" alt="bee smoker">
+            <img src="images/ig4.PNG" class="ig4" alt="honey pot">
+            <img src="images/ig5.PNG" class="ig5" alt="swarm">
+            <img src="images/ig6.PNG" class="ig6" alt="queen plugs">
+            <img src="images/ig7.PNG" class="ig7" alt="bee on flower">
+            <img src="images/ig8.PNG" class="ig8" alt="comb on frame">
+            <img src="images/ig9.PNG" class="ig9" alt="hives">
 
             <div class="footer">
                 <h1>Follow Us On Social Media</h1>
                 <br>
-                <a name="social"></a>
+                <a id="social"></a>
 
                 <div class="gallerycontainer">
-                    <a href="https://www.facebook.com/Kingdomhives/"><img src="images/facebook.png" class="fb" alt="Facebook icon"></a>
-                    <a href="https://www.instagram.com/kingdomhives/"><img src="images/instagram.png" class="ig" alt="Instagram Icon"></a>
-                    <a href="https://www.youtube.com/channel/UCR42rEzVHGhyBEKyScgeq6w"><img src="images/youtube.png" alt="YouTube Icon"
-                            class="yt"></a>
+                    <a href="https://www.facebook.com/Kingdomhives/"><img src="images/facebook.png" class="fb"
+                            alt="Facebook icon"></a>
+                    <a href="https://www.instagram.com/kingdomhives/"><img src="images/instagram.png" class="ig"
+                            alt="Instagram Icon"></a>
+                    <a href="https://www.youtube.com/channel/UCR42rEzVHGhyBEKyScgeq6w"><img src="images/youtube.png"
+                            alt="YouTube Icon" class="yt"></a>
                     <br>
-                    
+
                     <br><br>
-                    <a href="#home" class="btt">Back to top</a>
+
                 </div>
             </div>
 
@@ -119,19 +121,34 @@
         <div class="formcontainer">
             <form novalidate>
                 <p>
-                  <label for="mail">
-                    <span>Please enter a contact email here:</span>
-                    <input type="email" id="mail" name="mail">
-                    <span class="error" aria-live="polite"></span>
-                  </label>
+                    <label for="mail">
+                        <span>Please enter a contact email here:</span>
+                        <input type="email" id="mail" name="mail">
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+
+                    <a href="#form"><button onclick="myFunction()">Submit</button></a>
+                    <br><br><br>
+                    <span>Your Email is: </span>
+                    <input type="text" id="field2">
                 </p>
-                <button>Submit</button>
-              </form>
+                <a id="form"></a>
+
+
+            </form>
+
         </div>
-        
+        <script>
+
+        </script>
 
 
-<script src="js.js"></script>
+
+        <footer>
+            <a href="#home" class="btt">Back to top</a>
+        </footer>
+        <!-- javascript to add validation -->
+        <script src="js.js"></script>
 </body>
 
 </html>

@@ -214,9 +214,12 @@ nav li {
 	grid-area: btt;
 	margin-left: 45%;
 }
-@media (max-width: 830px) {
+/*Media Querry to make images mobile friendly*/
+@media (max-width: 1130px) {
 	.bush {
 		grid-area: bush;
+		/*Width Chaned to 100% to fill the screen instead
+		of fitting 3 images in a row.*/
 		width: 100%;
 	}
 	.manuka {
@@ -264,29 +267,29 @@ nav li {
 		width: 100%;
 	}
 }
-/* This is just to make the example nicer Email Validation */
+/* Making the Email Validation form prettier */
 .formcontainer {
 	display: flex;
 	align-items: center;
 	align-content: center;
-	width: 30%;
+	width: 100%;
 	margin: auto;
 
 	text-align: center;
 }
 body {
-	font: 1em sans-serif;
+	font: 2em sans-serif;
 	padding: 0;
 	margin: 0;
 }
 
 form {
-	max-width: 200px;
+
 	margin: auto;
 }
 
 button {
-	width: 30%;
+	width: 12em;
 	margin: auto;
 }
 p * {
@@ -306,8 +309,22 @@ input[type="email"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+input[type="text"] {
+	-webkit-appearance: none;
+	width: 100%;
+	border:none;
+	background-color: #333;
+	color: #facd35;
+	margin: 0;
 
-/* This is our style for the invalid fields */
+	font-family: inherit;
+	font-size: 90%;
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* This is our style for the form invalid fields */
 input:invalid {
 	border-color: #900;
 	background-color: #fdd;
@@ -317,7 +334,7 @@ input:focus:invalid {
 	outline: none;
 }
 
-/* This is the style of our error messages */
+/* This is the style of the form error messages */
 .error {
 	width: 100%;
 	padding: 0;
@@ -333,4 +350,14 @@ input:focus:invalid {
 
 .error.active {
 	padding: 0.3em;
+}
+/*End of form styles*/
+
+
+footer{
+	display: flex;
+	align-content: center;
+	margin-top: 5em;
+	font-size: 3em;
+	
 }
